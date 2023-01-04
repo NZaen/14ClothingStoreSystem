@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14Store Products Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <div class="logo">
+                    <li>
+                        <h1>14Store</h1>
+                    </li>
+                </div>
+                <div class="page">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">About</a></li>
+                </div>
+                <div class="profile">
+                    <li><a href="#">Login</a></li>
+                    <li><a><img src="" alt="Profile Photo"></a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mainPage">
+            <p>This is the main page of the website</p>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">Footer Logo</a>
+            </div>
+            <div class="footer-center">
+                <ul>
+                    <li>Address</li>
+                    <li>Contact</li>
+                    <li>Email</li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p>About the Website</p>
+                <p>Social Media</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
