@@ -130,3 +130,63 @@ main {
     grid-template-columns: auto auto auto;
     padding: 3em;
 }
+
+.mainPage {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mainPage p {
+  text-align: center;
+  /* Center the text inside the element */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  height: 100px
+}
+
+
+.footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer-left {
+  margin-right: auto;
+}
+
+.footer-center {
+  margin-right: auto;
+
+}
+
+.footer-center ul {
+  list-style: none;
+  color: black;
+}
+
+.footer-right {
+  margin-left: auto;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer p {
+  margin: 0;
+}
+
