@@ -256,3 +256,16 @@ footer {
   text-decoration: underline;
   color: black;
 }
+
+.inputContact-group{
+  top: 180px;
+  margin-top: 4em;
+  margin-left: 4em;
+  width: 280px;
+  transition: .5s;
+}
+#commentbox{
+  margin-top: 1em;
+  height: 200px;
+  width: 75%;
+}
