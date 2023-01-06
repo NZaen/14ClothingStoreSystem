@@ -130,6 +130,10 @@ main {
     grid-template-columns: auto auto auto;
     padding: 3em;
 }
+.navigation li a {
+  text-decoration: underline;
+  color: black;
+}
 
 .mainPage {
   position: absolute;
