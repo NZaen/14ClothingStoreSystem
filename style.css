@@ -130,6 +130,7 @@ main {
     grid-template-columns: auto auto auto;
     padding: 3em;
 }
+
 .navigation li a {
   text-decoration: underline;
   color: black;
@@ -194,3 +195,64 @@ footer {
   margin: 0;
 }
 
+.toggle_btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  border: 0;
+  outline: none;
+  position: relative;
+  margin-top: 30px;
+}
+
+.toggle_btn:hover{
+  background-color: grey;
+}
+
+.toggle_btn[type="button"]:hover{
+  color: white;
+}
+
+.input-group{
+  top: 180px;
+  position: relative;
+  width: 280px;
+  transition: .5s;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+}
+.submit-btn{
+  width: 45%;
+  margin-top: 30px;
+  padding: 10px 5px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  opacity: 0.8;
+}
+
+.submit-btn:hover{
+  background-color: grey;
+}
+
+.submit-btn[type="submit"]:hover{
+  color: white;
+}
+.register-button{
+  position: relative;
+  margin-left: 0px;
+  margin-top: 30px;
+}
+.register-button a{
+  text-decoration: underline;
+  color: black;
+}
