@@ -34,48 +34,28 @@
     </header>
 
     <main>
-      <form class="input-group">
-        <input
-          type="text"
-          class="input-field"
-          placeholder="Username"
-          required
-        />
-        <input type="text" class="input-field" placeholder="Name" required />
-        <input
-          type="text"
-          class="input-field"
-          placeholder="Phone number"
-          required
-        />
-        <input
-          type="text"
-          class="input-field"
-          placeholder="Email Address"
-          required
-        />
-        <input
-          type="password"
-          class="input-field"
-          placeholder="Password"
-          required
-        />
-        <input
-          type="password"
-          class="input-field"
-          placeholder="Confirm Password"
-          required
-        />
-        <button type="submit" class="submit-btn">Submit</button>
+      <form method="POST" action="connect.php" class="input-group">
+          <p>
+            <input type="text" class="input-field" placeholder="Username" name="Uname" id="Uname">
+          </p>
+          <p>
+            <input type="text" class="input-field" placeholder="Name" name="cname" id="cname">
+          </p>
+          <p>
+            <input type="text" class="input-field" placeholder="Email Address" name="email" id="email">
+          </p>
+          <p>
+            <input type="number" class="input-field" placeholder="Phone Number" name="tel_no" id="tel_no">
+          </p>
+          <p>
+            <input type="password" class="input-field" placeholder="Password" name="pw" id="pw">
+          </p>
+          <p>
+            <input type="submit" class="submit-btn"  name="submit" id="submit" value="Submit">
+          </p>
       </form>
-      <!--<div class="form-box">
-          
-          <div class="button-box">
-            <div id="btn"></div>
-            <button type="button" class="toggle_btn">Log In</button>
-            <button type="button" class="toggle_btn">Register</button>
-          </div>
-        </div>-->
+     
+      </form>
     </main>
 
     <footer>
