@@ -2,7 +2,7 @@
 ini_set("diplay errors", "1");
 error_reporting(E_ALL);
 
-echo "this is not working";
+//echo "this is not working";
     // getting all values from the HTML form
     if(isset($_POST['submit']))
     {
@@ -32,10 +32,12 @@ echo "this is not working";
   
     // send query to the database to add values and confirm if successful
     $rs = mysqli_query($con, $sql);
+
+    $m = "Thank you for your feedback";
+
     if($rs)
     {
-        echo "Entries added!";
-        header('Location: login.html');
+        header('Location: mainpage.html');
     }
   
     // close connection
