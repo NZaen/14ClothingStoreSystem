@@ -31,27 +31,47 @@
     </header>
 
     <main>
-      <form class="inputContact-group">
-        <input type="text" class="input-field" placeholder="Name" required />
+      <form method="POST" action="contact.php" class="inputContact-group">
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Name"
+          name="cname"
+          id="cname"
+          required
+        />
         <input
           type="text"
           class="input-field"
           placeholder="Phone number"
+          name="tel_no"
+          id="tel_no"
           required
         />
         <input
           type="text"
           class="input-field"
           placeholder="Email Address"
+          name="email"
+          id="email"
           required
         />
         <textarea
           type="textarea"
-          name="Comment"
+          name="comments"
           id="commentbox"
           placeholder="Leave your comment here"
+          required
         ></textarea>
-        <button type="submit" class="submit-btn">Submit</button>
+        <p>
+          <input
+            type="submit"
+            class="submit-btn"
+            name="submit"
+            id="submit"
+            value="Submit"
+          />
+        </p>
       </form>
     </main>
 
