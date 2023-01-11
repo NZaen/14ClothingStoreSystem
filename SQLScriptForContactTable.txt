@@ -1,0 +1,1 @@
+CREATE TABLE `14store`. ( `name` VARCHAR(50) NOT NULL , `tel_no` INT(50) NOT NULL , `email` VARCHAR(50) NOT NULL , `comments` TINYTEXT NOT NULL , PRIMARY KEY (`email`)) ENGINE = InnoDB;
