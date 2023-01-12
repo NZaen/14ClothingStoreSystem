@@ -271,3 +271,61 @@ footer {
   height: 200px;
   width: 75%;
 }
+
+.mc:active{
+  transform: scale(1, 0.9);
+  color:#2d3436;
+  transition: transform 0.2s color 0.2s;
+}
+
+.add-btn{
+  width: 45%;
+  margin-top: 30px;
+  padding: 10px 5px;
+  border: 1;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  opacity: 1;
+  background-color: rgb(213, 223, 226);
+}
+
+.add-btn[type="submit"]:hover{
+  color: white;
+}
+.add-btn:hover{
+  background-color: grey;
+}
+
+.input-group-P{
+  top: 100px;
+  margin-top: 3%;
+  margin-left: 5%;
+  position: obsolete;
+  width: 280px;
+  transition: .5s;
+}
+
+.addP-btn{
+  width: 45%;
+  margin-top: 30px;
+  padding: 10px 5px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  opacity: 0.8;
+}
+
+.label{
+  width: 45%;
+  margin-top: 0;
+  padding: 10px 5px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  opacity: 1;
+  font-size: large;
+  font: bold;
+}

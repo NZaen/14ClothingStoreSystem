@@ -24,7 +24,7 @@
             <li><a href="About.html">About</a></li>
           </div>
           <div class="profile">
-            <li><a href="#">Login</a></li>
+            <li><a href="#">Sign in</a></li>
             <li>
               <a><img src="" alt="Profile Photo" /></a>
             </li>
@@ -34,27 +34,42 @@
     </header>
 
     <main>
-      <div class="mainPage">
-        <input
-          type="text"
-          class="input-field"
-          placeholder="Email Address"
-          required
-        />
-        <input
-          type="password"
-          class="input-field"
-          placeholder="Password"
-          required
-        />
-
-        <div class="button-box">
-          <div id="btn"></div>
-          <button type="button" class="toggle_btn">Log In</button><br />
+      <form method="POST" action="login.php" class="input-group">
+        <p>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Email Address"
+            name="email"
+            id="email"
+            required
+          />
+        </p>
+        <p>
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Password"
+            name="pw"
+            id="pw"
+            required
+          />
+        </p>
+        <p>
+          <input
+            type="submit"
+            class="submit-btn"
+            name="login"
+            id="login"
+            value="Sign in"
+          />
+        </p>
+        <p>
           <div class="register-button">
             <a href="Register.html">Register</a>
           </div>
-        </div>
+        </p>
+      </form>
         <!--<div class="form-box">
           
           <div class="button-box">

@@ -1,9 +1,4 @@
 <?php
-ini_set("diplay errors", "1");
-error_reporting(E_ALL);
-
-echo "this is not working";
-    // getting all values from the HTML form
     if(isset($_POST['submit']))
     {
         $Uname = $_POST['Uname'];

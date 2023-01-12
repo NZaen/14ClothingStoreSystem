@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14Store Admin Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="navigation">
+          <div class="logo">
+            <li>
+              <script src="admin.js"></script>
+              <h1 class="mc">14Store</h1>
+            </li>
+          </div>
+          <div class="page">
+            <li><a href="admin.html">Home</a></li>
+            <li><a href="adminproducts.html">Products</a></li>
+            <li><a href="admincustomer.html">Customers</a></li>
+            <li><a href="admincontacts.html">Feedbacks</a></li>
+          </div>
+          <div class="profile">
+            <li><a href="logout.php">Sign out</a></li>
+            <li>
+              <a><img src="" alt="Profile Photo" /></a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form
+        class="input-group-P"
+        action="addeditproduct.php"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <!--<p>
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Product Name"
+            name="Pname"
+            id="Pname"
+            required
+          />
+        </p>
+        <p>
+          <input
+            type="number"
+            class="input-field"
+            placeholder="Price"
+            name="price"
+            id="price"
+            required
+          />
+        </p>
+        <br />
+        <p>
+          <label for="" class="label">Categories</label>
+          <label for="shirts">Shirts</label>
+          <input type="radio" name="category" value="shirts" id="shirts" />
+          <label for="pants">Pants</label>
+          <input type="radio" name="category" value="pants" id="pants" />
+          <label for="hats">Hats</label>
+          <input type="radio" name="category" value="hats" id="hats" />
+          <label for="watches">Watches</label>
+          <input type="radio" name="category" value="watches" id="watches" />
+          <label for="glasses">Glasses</label>
+          <input type="radio" name="category" value="glasses" id="glasses" />
+          <label for="belts">Belts</label>
+          <input type="radio" name="category" value="belts" id="belts" />
+        </p>
+        <br />!-->
+        <p>
+          <input type="file" name="file" />
+          <label for="upload">Upload Picture</label>
+        </p>
+        <p>
+          <button class="add-btn" type="submit" name="submit">
+            Add Product
+          </button>
+        </p>
+      </form>
+      <div></div>
+    </main>
+  </body>
+</html>
