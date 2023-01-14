@@ -60,9 +60,9 @@ select {
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-   scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -74,61 +74,61 @@ select {
 }
 
 header {
-    border: 1px solid black;
-    margin: 0;
+  border: 1px solid black;
+  margin: 0;
 }
 
 .navigation li {
-    list-style: none;
-    text-decoration: none;
+  list-style: none;
+  text-decoration: none;
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page {
-    display: flex;
-    gap: 0.75em;
+  display: flex;
+  gap: 0.75em;
 }
 
 .profile {
-    display: flex;
-    gap: 1em;
-    margin-right: 0.5em;
+  display: flex;
+  gap: 1em;
+  margin-right: 0.5em;
 }
 
 main {
-    display: flex;
+  display: flex;
 }
 
 .categories {
-    width: 25%;
-    border-right: 1px solid black;
-    padding: 2em 5em 0;
-    height: 90vh;
+  width: 25%;
+  border-right: 1px solid black;
+  padding: 2em 5em 0;
+  height: 90vh;
 }
 
 .categories ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5em;
-    font-size: 1.25em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  font-size: 1.25em;
 }
 
 .categories ul li {
-    list-style: none;
+  list-style: none;
 }
 
 .products {
-    width: 75%;
-    padding: 1em 5em 0;
-    display: grid;
-    gap: 2em;
-    grid-template-columns: auto auto auto;
-    padding: 3em;
+  width: 75%;
+  padding: 1em 5em 0;
+  display: grid;
+  gap: 2em;
+  grid-template-columns: auto auto auto;
+  padding: 3em;
 }
 
 .navigation li a {
@@ -195,7 +195,7 @@ footer {
   margin: 0;
 }
 
-.toggle_btn{
+.toggle_btn {
   padding: 10px 30px;
   cursor: pointer;
   opacity: 0.8;
@@ -205,15 +205,15 @@ footer {
   margin-top: 30px;
 }
 
-.toggle_btn:hover{
+.toggle_btn:hover {
   background-color: grey;
 }
 
-.toggle_btn[type="button"]:hover{
+.toggle_btn[type="button"]:hover {
   color: white;
 }
 
-.input-group{
+.input-group {
   top: 100px;
   margin-top: 3%;
   margin-left: 40%;
@@ -221,6 +221,7 @@ footer {
   width: 280px;
   transition: .5s;
 }
+
 .input-field {
   width: 100%;
   padding: 10px 0;
@@ -231,7 +232,8 @@ footer {
   border-bottom: 1px solid black;
   outline: none;
 }
-.submit-btn{
+
+.submit-btn {
   width: 45%;
   margin-top: 30px;
   padding: 10px 5px;
@@ -242,43 +244,46 @@ footer {
   opacity: 0.8;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
   background-color: grey;
 }
 
-.submit-btn[type="submit"]:hover{
+.submit-btn[type="submit"]:hover {
   color: white;
 }
-.register-button{
+
+.register-button {
   position: relative;
   margin-left: 0px;
   margin-top: 30px;
 }
-.register-button a{
+
+.register-button a {
   text-decoration: underline;
   color: black;
 }
 
-.inputContact-group{
+.inputContact-group {
   top: 180px;
   margin-top: 4em;
   margin-left: 4em;
   width: 280px;
   transition: .5s;
 }
-#commentbox{
+
+#commentbox {
   margin-top: 1em;
   height: 200px;
   width: 75%;
 }
 
-.mc:active{
+.mc:active {
   transform: scale(1, 0.9);
-  color:#2d3436;
+  color: #2d3436;
   transition: transform 0.2s color 0.2s;
 }
 
-.add-btn{
+.add-btn {
   width: 45%;
   margin-top: 30px;
   padding: 10px 5px;
@@ -290,14 +295,15 @@ footer {
   background-color: rgb(213, 223, 226);
 }
 
-.add-btn[type="submit"]:hover{
+.add-btn[type="submit"]:hover {
   color: white;
 }
-.add-btn:hover{
+
+.add-btn:hover {
   background-color: grey;
 }
 
-.input-group-P{
+.input-group-P {
   top: 100px;
   margin-top: 3%;
   margin-left: 5%;
@@ -306,7 +312,7 @@ footer {
   transition: .5s;
 }
 
-.addP-btn{
+.addP-btn {
   width: 45%;
   margin-top: 30px;
   padding: 10px 5px;
@@ -317,7 +323,7 @@ footer {
   opacity: 0.8;
 }
 
-.label{
+.label {
   width: 45%;
   margin-top: 0;
   padding: 10px 5px;
@@ -328,4 +334,20 @@ footer {
   opacity: 1;
   font-size: large;
   font: bold;
+}
+
+table {
+  font-family: arial, sans-serif;
+}
+
+td,
+th {
+  text-align: left;
+  font-size: 14px;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: flex-start;
 }

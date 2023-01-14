@@ -41,7 +41,7 @@
         method="POST"
         enctype="multipart/form-data"
       >
-        <!--<p>
+        <p>
           <input
             type="text"
             class="input-field"
@@ -61,26 +61,38 @@
             required
           />
         </p>
+        <p>
+          <input
+            type="number"
+            class="input-field"
+            placeholder="Quantity"
+            name="amount"
+            id="amount"
+            required
+          />
+        </p>
         <br />
         <p>
           <label for="" class="label">Categories</label>
           <label for="shirts">Shirts</label>
-          <input type="radio" name="category" value="shirts" id="shirts" />
+          <input type="radio" name="category" value="shirts" id="shirts" required/>
           <label for="pants">Pants</label>
-          <input type="radio" name="category" value="pants" id="pants" />
+          <input type="radio" name="category" value="pants" id="pants" required/>
           <label for="hats">Hats</label>
-          <input type="radio" name="category" value="hats" id="hats" />
+          <input type="radio" name="category" value="hats" id="hats" required/>
           <label for="watches">Watches</label>
-          <input type="radio" name="category" value="watches" id="watches" />
+          <input type="radio" name="category" value="watches" id="watches" required/>
           <label for="glasses">Glasses</label>
-          <input type="radio" name="category" value="glasses" id="glasses" />
+          <input type="radio" name="category" value="glasses" id="glasses" required/>
           <label for="belts">Belts</label>
-          <input type="radio" name="category" value="belts" id="belts" />
+          <input type="radio" name="category" value="belts" id="belts" required/>
+          <label for="shoes">Shoes</label>
+          <input type="radio" name="category" value="shoes" id="shoes" required/>
         </p>
-        <br />!-->
+        <br />
         <p>
-          <input type="file" name="file" />
-          <label for="upload">Upload Picture</label>
+          <input type="file" name="file" required/>
+          <label for="upload">UPLOAD PIC</label>
         </p>
         <p>
           <button class="add-btn" type="submit" name="submit">
@@ -88,7 +100,61 @@
           </button>
         </p>
       </form>
-      <div></div>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Category</th>
+          <th>Picture</th>
+          <th>Edit or Delete</th>
+        </tr>
+        <tr>
+          <?php
+            $host = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "14store";
+  
+            $con = mysqli_connect($host, $username, $password, $dbname);
+  
+            if (!$con)
+            {
+                die("Connection failed!" . mysqli_connect_error());
+            }
+  
+            $sql = "SELECT Pid, Pname, price, amount, category, fileExt FROM product";
+            $result = mysqli_query($con, $sql);
+  
+            while($row = $result->fetch_assoc()) 
+            { 
+              
+              $sessionid = $row['Pid'];
+              $sessiontype = $row['fileExt'];
+              $filename = "Product".$sessionid.".".$sessiontype;
+              $fileinfo = glob($filename);
+              $space = "<---->";
+              echo "<tr>
+                      <td>",$row['Pid'],"</td>
+                      <td>",$row['Pname'],"</td>
+                      <td>RM ",$row['price'],"</td>
+                      <td>",$row['amount'],"</td>
+                      <td>",$row['category'],"</td>
+                      <td><img src=","imguploads/",$filename," width=","100","height=","100",">",$filename,"</td>
+                      <td><a href=edit.php?edit=",$row['Pid'],">Edit</a>",$space,"<a href=delete.php?delete=",$row['Pid'],">Delete</a></td>
+                    </tr>"; 
+            }
+            
+          ?>
+        </tr>
+      </table>
+      <script>
+        const toggleRow = (element) => {
+          element.getElementsByClassName('expanded-row-content')[0].classList.toggle('hide-row');
+          console.log(event);
+        }
+      </script>
     </main>
   </body>
 </html>
