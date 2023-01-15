@@ -3,7 +3,6 @@ if(isset($_POST['submit']))
 {
     $Pname = $_POST['Pname'];
     $price = $_POST['price'];
-    $amount = $_POST['amount'];
     $category = $_POST['category'];
     //$files = $_POST['file'];
 
@@ -31,7 +30,7 @@ if(isset($_POST['submit']))
     }
 
     // using sql to create a data entry query
-    $sql = "INSERT INTO product (Pid, Pname, price, amount, category,fileExt) VALUES ('0', '$Pname', '$price', '$amount', '$category', '$fileActualExt')";
+    $sql = "INSERT INTO product (Pid, Pname, price, category,fileExt) VALUES ('0', '$Pname', '$price', '$category', '$fileActualExt')";
 
     mysqli_query($con, $sql);
 

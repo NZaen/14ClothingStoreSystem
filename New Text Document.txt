@@ -1,2 +1,2 @@
 AddType application/x-httpd-php .htm .html 
-//save as .htaccess extension all files and delete this line
+//save as .htaccess and delete this line
