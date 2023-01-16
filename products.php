@@ -79,7 +79,7 @@ session_start();
           $filename = "Product".$sessionid.".".$sessiontype;
 
           echo "<div class=","product","><h3>",$row['Pname'],"</h3><a><img src=","imguploads/",$filename," 
-          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Quantity: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
+          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Available: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
 
         } 
       }
@@ -94,7 +94,7 @@ session_start();
           $filename = "Product".$sessionid.".".$sessiontype;
 
           echo "<div class=","product","><h3>",$row['Pname'],"</h3><a><img src=","imguploads/",$filename," 
-          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Quantity: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
+          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Available: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
 
         } 
       }
@@ -109,7 +109,7 @@ session_start();
           $filename = "Product".$sessionid.".".$sessiontype;
 
           echo "<div class=","product","><h3>",$row['Pname'],"</h3><a><img src=","imguploads/",$filename," 
-          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Quantity: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
+          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Available: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
 
         } 
       }
@@ -124,7 +124,7 @@ session_start();
           $filename = "Product".$sessionid.".".$sessiontype;
 
           echo "<div class=","product","><h3>",$row['Pname'],"</h3><a><img src=","imguploads/",$filename," 
-          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Quantity: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
+          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Available: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
 
         } 
       }
@@ -139,7 +139,7 @@ session_start();
           $filename = "Product".$sessionid.".".$sessiontype;
 
           echo "<div class=","product","><h3>",$row['Pname'],"</h3><a><img src=","imguploads/",$filename," 
-          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Quantity: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
+          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Available: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
 
         } 
       }
@@ -154,7 +154,7 @@ session_start();
           $filename = "Product".$sessionid.".".$sessiontype;
 
           echo "<div class=","product","><h3>",$row['Pname'],"</h3><a><img src=","imguploads/",$filename," 
-          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Quantity: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
+          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Available: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
 
         } 
       }
@@ -169,7 +169,7 @@ session_start();
           $filename = "Product".$sessionid.".".$sessiontype;
 
           echo "<div class=","product","><h3>",$row['Pname'],"</h3><a><img src=","imguploads/",$filename," 
-          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Quantity: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
+          width=","100","height=","100","><a>RM ",$row['price'],"<br><a>Available: ",$row['amount'],"<br><a  href=","login.html",">Buy Now</a></a></a></a></div>";
 
         } 
       }

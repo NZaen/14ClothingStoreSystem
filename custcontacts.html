@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14Store Contacts Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navigation">
+          <div class="logo">
+            <li><h1>14Store</h1></li>
+          </div>
+          <div class="page">
+            <li><a href="custmain.html">Home</a></li>
+            <li><a href="custproducts.php">Products</a></li>
+            <li><a href="custcontacts.html">Contacts</a></li>
+            <li><a href="custabout.html">About</a></li>
+          </div>
+          <div class="profile">
+            <li><a href="logout.php">Sign out</a></li>
+            <li>
+              <a><img src="" alt="Profile Photo" /></a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form method="POST" action="contact.php" class="inputContact-group">
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Name"
+          name="cname"
+          id="cname"
+          required
+        />
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Phone number"
+          name="tel_no"
+          id="tel_no"
+          required
+        />
+        <input
+          type="text"
+          class="input-field"
+          placeholder="Email Address"
+          name="email"
+          id="email"
+          required
+        />
+        <textarea
+          type="textarea"
+          name="comments"
+          id="commentbox"
+          placeholder="Leave your comment here"
+          required
+        ></textarea>
+        <p>
+          <input
+            type="submit"
+            class="submit-btn"
+            name="submit"
+            id="submit"
+            value="Submit"
+          />
+        </p>
+        <script src="contact.js"></script>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-left">
+          <a href="#" class="footer-logo">Footer Logo</a>
+        </div>
+        <div class="footer-center">
+          <ul>
+            <li>Address</li>
+            <li>Contact</li>
+            <li>Email</li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <p>About the Website</p>
+          <p>Social Media</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

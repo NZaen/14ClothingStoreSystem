@@ -1,4 +1,5 @@
 <?php
+    session_start();
     if(isset($_POST['login']))
     {
         $email = $_POST['email'];
@@ -43,7 +44,7 @@
                 {
 
                     $_SESSION['id'] = $user_data['id'];
-                    header("Location: mainpage.html");
+                    header("Location: custmain.html");
                     die;
                 }
             }
