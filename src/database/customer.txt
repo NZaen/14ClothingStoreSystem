@@ -1,0 +1,9 @@
+CREATE TABLE customer (
+    customerID int(11) PRIMARY KEY AUTO_INCREMENT,
+    customerUsername varchar(255) NOT NULL,
+    customerName varchar(255) NOT NULL,
+    customerEmail varchar(255) NOT NULL,
+    customerPassword varchar(255) NOT NULL,
+    home_address text,
+    phone number varchar(13)
+);

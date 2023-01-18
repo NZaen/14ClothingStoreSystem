@@ -1,0 +1,9 @@
+CREATE TABLE products (
+    product_id int(11) PRIMARY KEY AUTO_INCREMENT,
+    product_name varchar(255) NOT NULL,
+    product_category varchar(255) NOT NULL,
+    product_description text NOT NULL,
+    product_price decimal(10,2) NOT NULL,
+    product_image text NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
