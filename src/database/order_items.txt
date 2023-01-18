@@ -4,5 +4,7 @@ CREATE TABLE order_items (
     product_id int(11) NOT NULL,
     quantity int(2) NOT NULL,
     size varchar(10) NOT NULL,
-    total_price decimal(10,2)
+    total_price decimal(10,2),
+    FOREIGN KEY (order_id) REFERENCES orders(id),
+    FOREIGN KEY (product_id) REFERENCES products(product_id)
 );
